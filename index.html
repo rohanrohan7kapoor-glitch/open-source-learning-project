@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Open Source Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .card {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1e293b;
+      border-radius: 16px;
+    }
+    button {
+      padding: 12px 24px;
+      background: #22c55e;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome!</h1>
+    <p>My first open-source web project.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Thank you for visiting my project!";
+    }
+  </script>
+</body>
+</html>
